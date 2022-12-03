@@ -17,7 +17,7 @@ def fill_items(): # O(n)
 	
 	return obj
 
-def communletter(a:str, b:str): # O(n)
+def common_letter(a:str, b:str): # O(n)
 	values = {}
 	total_for_this =0
 	for j in a:
@@ -39,6 +39,6 @@ if __name__ == "__main__": # since I am importing the fill_items function this w
 		middle = round(len(x)/2)
 		first_part = x[:middle]
 		second_part = x[middle:]
-		total += communletter(first_part,second_part) # n + 1
+		total += common_etter(first_part,second_part) # n + 1
 
 	print(total) # 8185 right
